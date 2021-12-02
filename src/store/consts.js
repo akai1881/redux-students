@@ -1,1 +1,7 @@
 export const FETCH_USERS = 'FETCH_USERS';
+
+export const FETCH_USER_LOADING = 'FETCH_USER_LOADING';
+
+export const FETCH_USER_SUCCESS = 'FETCH_USER_SUCCES';
+
+export const FETCH_USER_ERROR = 'FETCH_USER_ERROR';

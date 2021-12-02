@@ -1,0 +1,42 @@
+@import './../../assets/variables.scss';
+
+.header {
+    padding: 20px 0;
+    min-height: 70px;
+    background: rgb(172, 152, 152);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-size: 20px;
+        color: $primary-color;
+        margin: 0;
+    }
+    .nav {
+        &__link {
+            padding: 10px;
+            color: $default-color;
+            transition: 0.3s;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background-color: blue;
+                border-radius: 1px;
+                bottom: 0;
+                left: 0;
+                transition: 0.3s;
+            }
+            &:hover {
+                color: red;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

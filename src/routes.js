@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import UserDetails from './pages/UserDetails';
 import Users from './pages/Users';
 
 const AppRoutes = () => {
@@ -6,6 +7,7 @@ const AppRoutes = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Users />} />
+                <Route path="/user/:id" element={<UserDetails />} />
             </Routes>
         </BrowserRouter>
     );

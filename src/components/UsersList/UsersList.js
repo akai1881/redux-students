@@ -1,5 +1,6 @@
 import { Table } from 'antd';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const UsersList = ({ users }) => {
     const columns = [
@@ -7,6 +8,7 @@ const UsersList = ({ users }) => {
             title: 'First name',
             dataIndex: 'first_name',
             key: 'first_name',
+            render: (text, row) => <Link to={`/user/${row.id}`}>{text}</Link>,
         },
         {
             title: 'Last Name',
