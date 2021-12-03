@@ -1,0 +1,16 @@
+.form__create {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    > * {
+        margin-bottom: 10px;
+    }
+    input {
+        padding: 5px;
+    }
+}
+
+.error-msg {
+    color: red;
+}

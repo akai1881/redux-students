@@ -1,9 +1,13 @@
 import React from 'react';
 import { Card } from 'antd';
+import { DeleteOutlined, EditOutlined } from '@ant-design/icons';
 
-const UserCard = ({ user }) => {
+const UserCard = ({ user, onDelete }) => {
     return (
-        <Card>
+        <Card
+            actions={[<EditOutlined key="edit" />, <DeleteOutlined onClick={onDelete} key="delete" />]}
+            style={{ width: 300 }}
+        >
             <p>
                 Name: {user?.first_name} {user?.last_name}
             </p>
